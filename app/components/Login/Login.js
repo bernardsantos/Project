@@ -47,4 +47,7 @@ const styles = StyleSheet.create({
     width: 130,
     opacity: 0.8,
   },
+  button: {
+    alignItems: 'center',
+  },
 });

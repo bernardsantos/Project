@@ -3,12 +3,15 @@ import {
   StyleSheet,
   View,
   TextInput,
-  TouchableOpacity,
   Text,
   StatusBar,
+  TouchableOpacity,
+  Button,
+
 } from 'react-native';
 
 export default class LoginForm extends Component {
+
   render(){
     return(
       <View style = {styles.container}>
@@ -34,7 +37,14 @@ export default class LoginForm extends Component {
           ref={(input) => this.passwordInput = input}
           style = {styles.input}
         />
-      </View>
+        renderButton: fucntion(){
+        <TouchableOpacity onPress={this._onPressButton} style={styles.buttonContainer}>
+          <Text style={styles.buttonText}>
+            LOGIN
+          </Text>
+        </TouchableOpacity>
+        }
+        </View>
     );
   }
 }
